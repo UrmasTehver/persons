@@ -1,0 +1,43 @@
+<%- include('../partials/header');  %> 
+
+<div class="container">
+    <div class="row gy-4">
+        <h2 class="text-center">Personal details</h2>
+        <br>
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+               
+            <form>
+                <div class="mb-3">
+                  <label class="form-label"><strong>ID:</strong></label><br>
+                  <label class="form-label"><strong>Firstname:</strong></label><br>
+                  <label class="form-label"><strong>Lastname:</strong></label><br>
+                  <label class="form-label"><strong>Gender:</strong></label><br>
+                  <label class="form-label"><strong>Birthdate:</strong></label><br>
+                  <label class="form-label"><strong>Country:</strong></label><br>
+                  <label class="form-label"><strong>Company:</strong></label><br>
+                  <label class="form-label"><strong>Color:</strong></label><br>
+                </div>
+            </form>
+            <a href="/">Tagasi avalehele</a><br>
+        </div>
+        <div class="col-md-3">
+            <form>
+                <div class="mb-3">
+                  <label class="form-label"><%= datas.ID %></label><br>
+                  <label class="form-label"><%= datas.Firstname %></label><br>
+                  <label class="form-label"><%= datas.Lastname %></label><br>
+                  <label class="form-label"><%= datas.Gender %></label><br>
+                  <label class="form-label"><%= datas.Birthdate %></label><br>
+                  <label class="form-label"><%= datas.Country %></label><br>
+                  <label class="form-label"><%= datas.Company %></label><br>
+                  <label class="form-label"><%= datas.Color %></label><br>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>    
+</div>  
+
+
+<%- include('../partials/footer'); %>
